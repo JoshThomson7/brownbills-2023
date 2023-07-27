@@ -6,7 +6,7 @@
 .footer {
 
     position: relative;
-    background: var(--fl1-primary);
+    background: $primary;
     background-repeat: no-repeat;
     background-position: bottom center;
     background-size: 100%;
@@ -237,7 +237,7 @@
                 list-style: none;
                 padding-bottom: 16px;
                 font-size: 14px;
-                color: #fff;
+                color: $white;
                 display: flex;
 
                 @include breakpoint(brotherbear) {
@@ -246,7 +246,7 @@
 
                 i {
                     font-size: 14px;
-                    color: var(--fl1-secondary);
+                    color: $white;
                     min-width: 1.5rem;
                     display: flex;
                     justify-content: center;
@@ -260,7 +260,7 @@
 
                 a {
                     font-size: 14px;
-                    color: var(--fl1-white);
+                    color: $white;
 
                     &:hover {
                         color: var(--fl1-secondary);
@@ -275,7 +275,7 @@
                         i {
                             transition: color 0.3s ease;
                             font-size: 20px;
-                            color: #fff;
+                            color: $white;
                         }
 
                         &:hover {
@@ -299,7 +299,7 @@
             h5 {
                 font-size: 16px;
                 font-weight: 600;
-                color: #fff;
+                color: $white;
                 margin: 0;
                 padding: 0;
             }
@@ -315,7 +315,7 @@
             figure {
                 margin-bottom: var(--fl1-spacing-lg);
 
-                svg {
+                img {
                     width: 80%;
                     height: auto;
 
@@ -388,11 +388,11 @@
             li {
                 list-style: none;
                 font-size: 12px;
-                color: #fff;
+                color: $white;
                 white-space: nowrap;
 
                 a {
-                    color: #fff;
+                    color: $white;
 
                     &:hover {
                         color: var(--fl1-secondary);
@@ -406,7 +406,7 @@
         display: flex;
         justify-content: space-between;
         padding: var(--fl1-spacing-lg) 0;
-        border-top: 1px lighten($primary, 10%) solid;
+        border-top: 1px lighten($white, 10%) solid;
 
         @include breakpoint(brotherbear) {
             flex-direction: column;
@@ -440,33 +440,16 @@
 
         small {
             font-size: 12px;
-            color: var(--fl1-white);
+            color: $white;
 
             a {
-                color: var(--fl1-white);
+                color: $white;
                 font-size: 12px;
                 display: flex;
                 align-items: center;
 
-                svg {
-                    transition: all 0.3s ease;
-                    height: 20px;
-                    margin: 0 4px;
-
-                    path {
-                        fill: var(--fl1-white);
-                    }
-                }
-
                 &:hover {
                     color: var(--fl1-secondary);
-
-                    svg {
-                        path {
-                            fill: var(--fl1-secondary);
-                            transition: all 0.3s ease;
-                        }
-                    }
                 }
             }
         }

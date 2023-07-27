@@ -1,13 +1,15 @@
+// https://designs.ai/colors/palette/1427
+
 // Fonts
 $primaryFont: 'Quicksand', sans-serif;
 $secondaryFont: 'Quicksand', sans-serif;
 $baseFontSize: 1rem; // 16px
-$baseFontColor: #5A5072;
+$baseFontColor: #000;
 
 // Colours
-$primary: #0A253E;
+$primary: #203e5f;
 $primaryLight: #F9ECED;
-$secondary: #FFA64E;
+$secondary: #eec550;
 $lightgrey: #F3F4F5;
 $text: $baseFontColor;
 $textLight: #435366;
@@ -22,8 +24,8 @@ $white: #fff;
 :root {
 
     // Colors
-    --fl1-primary: #0A253E;
-    --fl1-secondary: #FFA64E;
+    --fl1-primary: #203e5f;
+    --fl1-secondary: #eec550;
     --fl1-lightgrey: #F3F4F5;
     --fl1-text: #5A5072;
     --fl1-text-light: #b2aebd;

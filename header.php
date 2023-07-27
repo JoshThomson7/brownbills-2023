@@ -40,7 +40,7 @@
 
                         <div class="logo">
                             <a href="<?php echo esc_url(home_url()); ?>" title="<?php bloginfo('name'); ?>">
-                                <?php echo file_get_contents(FL1_PATH . '/img/logo.svg') ?>
+                                <img src="<?php echo esc_url(get_stylesheet_directory_uri().'/img/brownbills-logo.png'); ?>" alt="<?php bloginfo('name'); ?>"/>
                             </a>
                         </div><!-- logo -->
                         <?php include FL1_PATH . '/modules/mega-menu.php'; ?>
@@ -50,20 +50,8 @@
                         <nav class="top-nav">
                             <ul>
                                 <li>
-                                    <a href="https://partner.insigniscash.com/" target="_blank">
-                                        <i class="fa-regular fa-briefcase"></i> <span>Partner Portal</span>
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a href="https://clients.insigniscash.com/" target="_blank">
-                                        <i class="fa-regular fa-user"></i> <span>Client Login</span>
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a href="<?php echo esc_url(get_permalink(get_page_by_path('open-an-account'))) ?>" class="button secondary tiny">
-                                        Open an account
+                                    <a href="#" class="button secondary tiny">
+                                        Contact Us
                                     </a>
                                 </li>
                             </ul>

@@ -1,7 +1,7 @@
 <nav id="nav_mobile" class="nav__mobile">
     <div>
         <div class="menu__logo">
-			<?php echo file_get_contents(FL1_PATH.'/img/logo.svg') ?>
+            <img src="<?php echo esc_url(get_stylesheet_directory_uri().'/img/brownbills-logo.png'); ?>" alt="<?php bloginfo('name'); ?>"/>
 		</div>
         <ul>
             <?php

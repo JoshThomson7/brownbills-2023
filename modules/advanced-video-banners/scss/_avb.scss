@@ -10,13 +10,13 @@ section.avb {
     width: 100%;
     height: 100%;
     position: relative;
-    background: var(--fl1-primary);
+    background: $white;
 
     .avb-banners {
 
         position: relative;
         width: 100%;
-        background: var(--fl1-primary);
+        background: $white;
 
         &.slick-initialized {
             opacity: 1;

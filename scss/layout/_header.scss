@@ -6,7 +6,7 @@ header.header {
     transition: all 0.4s ease;
     width: 100%;
     z-index: 2;
-	background: var(--fl1-primary);
+	background: $white;
 
     .header--site__wide__notice {
         padding: 10px 0;
@@ -52,16 +52,16 @@ header.header {
 			}
 
             .logo {
-                width: 256px;
+                width: 180px;
                 transition: all 0.4s ease;
 
 				@include breakpoint(brotherbear) {
-					width: 212px;
+					width: 170px;
 				}
 
 				@include breakpoint(560px) {
 					margin: 0 auto;
-					width: 256px;
+					width: 160px;
 				}
 				
                 a {
