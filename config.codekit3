@@ -1283,6 +1283,121 @@
       "oAP" : "\/modules\/advanced-events-framework\/templates\/index.php",
       "oF" : 0
     },
+    "\/modules\/advanced-team-members\/assets\/css\/_at-archive.min.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/modules\/advanced-team-members\/assets\/css\/_at-archive.min-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/modules\/advanced-team-members\/assets\/css\/at-archive.min.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/modules\/advanced-team-members\/assets\/css\/at-archive.min-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/modules\/advanced-team-members\/assets\/js\/atm-scripts.min.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/modules\/advanced-team-members\/assets\/js\/atm-scripts.min-min.js",
+      "oF" : 0,
+      "sC" : 1,
+      "tS" : 0
+    },
+    "\/modules\/advanced-team-members\/functions\/ateam-functions.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/modules\/advanced-team-members\/functions\/ateam-functions.php",
+      "oF" : 0
+    },
+    "\/modules\/advanced-team-members\/functions\/inc\/ateam-ajax.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/modules\/advanced-team-members\/functions\/inc\/ateam-ajax.php",
+      "oF" : 0
+    },
+    "\/modules\/advanced-team-members\/functions\/inc\/ateam-enqueue.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/modules\/advanced-team-members\/functions\/inc\/ateam-enqueue.php",
+      "oF" : 0
+    },
+    "\/modules\/advanced-team-members\/functions\/inc\/ateam-post-type.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/modules\/advanced-team-members\/functions\/inc\/ateam-post-type.php",
+      "oF" : 0
+    },
+    "\/modules\/advanced-team-members\/functions\/inc\/ateam-templates.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/modules\/advanced-team-members\/functions\/inc\/ateam-templates.php",
+      "oF" : 0
+    },
+    "\/modules\/advanced-team-members\/helpers\/team-loop.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/modules\/advanced-team-members\/helpers\/team-loop.php",
+      "oF" : 0
+    },
+    "\/modules\/advanced-team-members\/templates\/_team-single.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/modules\/advanced-team-members\/templates\/_team-single.php",
+      "oF" : 0
+    },
+    "\/modules\/advanced-team-members\/templates\/team-archive.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/modules\/advanced-team-members\/templates\/team-archive.php",
+      "oF" : 0
+    },
+    "\/modules\/advanced-team-members\/templates\/team-single-component.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/modules\/advanced-team-members\/templates\/team-single-component.php",
+      "oF" : 0
+    },
+    "\/modules\/advanced-team-members\/templates\/team-single.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/modules\/advanced-team-members\/templates\/team-single.php",
+      "oF" : 0
+    },
     "\/modules\/advanced-video-banners\/functions\/class-avb-banner-html-video.php" : {
       "cB" : 0,
       "ft" : 8192,
