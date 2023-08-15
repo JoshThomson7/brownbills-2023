@@ -67,6 +67,8 @@
 				}
             }
 
+            a{color: var(--fl1-primary);}
+
             p {
                 font-size: var(--fl1-font-xs);
                 line-height: 1.6;
@@ -153,6 +155,8 @@
 				a.link { 
 					color: #fff;
 				}
+
+                a{color: var(--fl1-primary);}
 			}
 		}
     }

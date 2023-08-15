@@ -63,13 +63,13 @@ $bottom_img_2 = get_field('bottom_image_2', $team_id);
                         <h6><?php echo $qualifications ?></h6>
                         <h5><?php echo $job_title ?></h5>
 
-                        <div class="phone">
+                        <!-- <div class="phone">
                             <a href="tel:<?php echo $team_phone; ?>"><span>T:</span><?php echo $team_phone; ?></a>
                         </div>
 
                         <div class="email">
                             <a href="mailto:<?php echo $team_email; ?>"><span>E:</span><?php echo $team_email; ?></a>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
 
@@ -91,17 +91,9 @@ $bottom_img_2 = get_field('bottom_image_2', $team_id);
         </div>
     </div>
 
-    <?php if(get_field('team_single_form')): ?>
-        <div class="bottom">
-            <div class="max__width">
-                <?php echo do_shortcode('[gravityform id="6" title="true" description="true"]');  ?>
-                <?php /* the_field('team_single_form'); */ ?>
-            </div>
-        </div> 
-    <?php endif; ?>
 </div>
 
 <?php 
-flexible_content();
+
 get_footer();
 ?>

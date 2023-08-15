@@ -15,7 +15,7 @@ FC_Helpers::flexible_content();
 
     <div class="max__width">
 
-        <form action="" id="team__search__form" class="team__search__form">
+        <!-- <form action="" id="team__search__form" class="team__search__form">
 
             <div class="input__search__text">
                 <input type="text" name="team_name" id="team_search_keyword" placeholder="Name">
@@ -72,7 +72,8 @@ FC_Helpers::flexible_content();
                     <?php endwhile; wp_reset_postdata(); ?>
                 </select>
             <?php endif; ?>
-        </form> <!--team__search__form-->
+        </form>  -->
+        <!--team__search__form-->
     </div>
 
     <div class="team__results" id="team__results">

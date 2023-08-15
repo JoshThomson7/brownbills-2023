@@ -7,7 +7,7 @@ function atm_enqueue() {
     if(is_page('our-team')){
       
         // style
-        wp_enqueue_style('atm-styles', atm_path(true).'assets/css/at-archive.min.css' );
+        // wp_enqueue_style('atm-styles', atm_path(true).'assets/css/at-archive.min.css' );
 
         // Ajax
         wp_enqueue_script('atm-scripts', atm_path(true).'assets/js/atm-scripts.min.js', array('jquery'), '', false);

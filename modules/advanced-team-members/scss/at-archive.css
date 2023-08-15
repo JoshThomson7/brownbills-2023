@@ -33,16 +33,12 @@
 }
 
 .team__single__container {
-  padding: 120px 0 0;
+  padding: 20px 0;
 }
 .team__single__container .breadcrumbs {
-  margin: 20px 0 30px;
-}
-.team__single__container .breadcrumbs a {
-  color: #12100B;
-}
-.team__single__container .breadcrumbs .current {
-  color: #CAD405;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 10px;
 }
 .team__single__container .max__width {
   display: flex;
@@ -51,19 +47,27 @@
 .team__single__container .max__width .top {
   width: 100%;
   display: flex;
-  flex-direction: column;
+}
+@media (max-width: 1024px) {
+  .team__single__container .max__width .top {
+    flex-direction: column;
+  }
 }
 .team__single__container .max__width .top .left {
-  width: 100%;
-  margin-bottom: 30px;
-  display: flex;
+  width: 48%;
+  padding-right: 2%;
+}
+@media (max-width: 1024px) {
+  .team__single__container .max__width .top .left {
+    width: 100%;
+    padding-right: 0;
+  }
 }
 .team__single__container .max__width .top .left .info {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  width: 50%;
+  justify-content: space-between;
+  border-right: 1px solid #12100B;
 }
 .team__single__container .max__width .top .left .info .text h3 {
   font-size: 28px;
@@ -110,21 +114,8 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  width: 300px;
-  height: 300px;
-}
-.team__single__container .max__width .top .left .content {
-  width: 50%;
-}
-.team__single__container .max__width .top .left .content h2 {
-  font-size: 28px;
-  color: #CAD405;
-  margin-bottom: 10px;
-  font-weight: 700;
-}
-.team__single__container .max__width .top .left .content p {
-  line-height: 25px;
-  margin-bottom: 20px;
+  width: 100px;
+  height: 100px;
 }
 .team__single__container .max__width .top .right {
   width: 48%;
@@ -151,12 +142,6 @@
   font-size: 17px;
   line-height: 27px;
 }
-@media (max-width: 1024px) {
-  .team__single__container .max__width .top .right .details .item img {
-    max-width: 400px;
-    margin: 0 auto;
-  }
-}
 .team__single__container .max__width .top .right .details .item.hide-section {
   display: none;
 }
@@ -172,57 +157,6 @@
   display: inline-block;
   color: #12100B;
   text-decoration: underline;
-}
-.team__single__container .bottom {
-  background: #CAD405;
-  padding: 20px 0;
-}
-.team__single__container .bottom .max__width {
-  display: flex;
-  flex-direction: row;
-}
-@media (max-width: 1024px) {
-  .team__single__container .bottom .max__width {
-    flex-direction: column;
-  }
-}
-.team__single__container .bottom .max__width .left {
-  width: 48%;
-  padding-right: 2%;
-  display: flex;
-}
-@media (max-width: 1024px) {
-  .team__single__container .bottom .max__width .left {
-    width: 100%;
-    padding-right: 0;
-  }
-}
-.team__single__container .bottom .max__width .left img {
-  width: 50%;
-}
-.team__single__container .bottom .max__width .right {
-  padding-left: 2%;
-  flex: 1;
-}
-@media (max-width: 1024px) {
-  .team__single__container .bottom .max__width .right {
-    width: 100%;
-    padding-left: 0;
-    margin-top: 30px;
-  }
-}
-.team__single__container .bottom .max__width .right h2 {
-  font-size: 28px;
-  font-weight: 700;
-  margin-bottom: 10px;
-}
-.team__single__container .bottom .max__width .right .social {
-  margin-top: 20px;
-}
-.team__single__container .bottom .max__width .right .social a i {
-  color: #12100B;
-  font-size: 40px;
-  padding-right: 20px;
 }
 
 section.team__filters .team__search__form {
@@ -407,7 +341,6 @@ section.team__filters .team__results .loading-overlay #spinner path {
 section.team__filters .team__results .masonry__item__wrapper .team__wrap {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
 }
 section.team__filters .team__results .masonry__item__wrapper .team__wrap article a {
   display: block;

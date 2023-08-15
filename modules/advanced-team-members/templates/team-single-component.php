@@ -18,7 +18,7 @@ $team_img = vt_resize($attachment_id,'' , 900, 900, false);
             <article data-image-list="<?php echo $team_img['url']; ?>">
                 <a href="<?php the_permalink(); ?>" title="">
                     <span class="team__overlay">
-                        <span class="team__more"><?php echo 'Meet '.explode(' ',trim(get_the_title($team_id)))[0]?></span>
+                        <span class="team__more"><?php echo 'Meet '. get_the_title($team_id) ?></span>
                     </span><!-- team__overlay -->
                     <img src="<?php echo $team_img['url']; ?>" alt="" />
 

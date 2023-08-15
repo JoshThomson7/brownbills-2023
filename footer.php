@@ -56,9 +56,9 @@
                         <li>Cecil House,<br> Norwood Street,<br> Ashford, TN23 1QT</li>
                         
                         <li class="social">
-                            <a href="" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-                            <a href="" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-                            <a href="" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://twitter.com/brownbillstweet" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="https://www.facebook.com/brownbillsoptometrists/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="https://www.instagram.com/brownbillsoptometrists/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
                         </li>
                     </ul>
                 </div>
