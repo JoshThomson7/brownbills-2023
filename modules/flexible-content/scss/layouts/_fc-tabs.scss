@@ -62,14 +62,14 @@ Tabs
                 &.active,
                 &:hover {
                     a {
-                        background: var(--fl1-primary-light);
+                        background: var(--fl1-secondary);;
                     }
                 }
             }
         }
 
         .tab__content {
-            padding: 42px 12% 20px;
+            padding: 45px 50px 20px;
             display: flex;
             flex-direction: column;
 
