@@ -18,12 +18,19 @@ if (get_sub_field('type') === 'custom') {
 	$args['post__in'] = get_sub_field('team_custom') ?? array(0);
 }
 
+$team_carousel = get_sub_field('team_carousel');
+
+$team_carousel = get_sub_field('team_carousel');
+if($team_carousel) {
+    $team_carousel_class[] = 'team_carousel';
+}
+
 $team_query = new WP_Query($args);
 $team = $team_query->posts;
 $team_total = $team_query->post_count;
 ?>
 
-<div class="team__wrap">
+<div class="team__wrap <?php echo join(' ', $team_carousel_class); ?>">
 	<?php
 	foreach ($team as $team_id) :
 

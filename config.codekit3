@@ -7,7 +7,7 @@
       "uuidString" : "681EB742-5211-49D1-A4AF-20F774D71A87"
     }
   ],
-  "creatorBuild" : "34510",
+  "creatorBuild" : "34518",
   "files" : {
     "\/404.php" : {
       "cB" : 0,
@@ -4791,9 +4791,6 @@
       "no-return-assign" : {
         "active" : 0,
         "optionString" : "'except-parens'"
-      },
-      "no-return-await" : {
-        "active" : 0
       },
       "no-script-url" : {
         "active" : 0

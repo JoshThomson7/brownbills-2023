@@ -122,6 +122,33 @@ jQuery(document).ready(function($){
         ]
     });
 
+    $('.team_carousel').slick({
+        dots: true,
+        infinite: false,
+        speed: 300,
+        slidesToShow: 3,
+		slidesToScroll: 3,
+        arrows: true,
+        appendArrows: $('.fc-layout-heading-right'),
+        rows: 0,
+        responsive : [
+            {
+                breakpoint: 600,
+                settings: {
+                  slidesToShow: 2,
+                  slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                  slidesToShow: 1,
+                  slidesToScroll: 1
+                }
+            }
+        ]
+    });
+
     $('.fc-layout-carousel').slick({
         dots: true,
         infinite: false,
