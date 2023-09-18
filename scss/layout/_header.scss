@@ -52,11 +52,11 @@ header.header {
 			}
 
             .logo {
-                width: 180px;
+                width: 244px;
                 transition: all 0.4s ease;
 
 				@include breakpoint(brotherbear) {
-					width: 170px;
+					width: 200px;
 				}
 
 				@include breakpoint(560px) {
@@ -78,8 +78,8 @@ header.header {
 
         &--right {
             display: flex;
-            flex-direction: column;
-            align-items: flex-end;
+            // flex-direction: column;
+            align-items: center;
 
 			@include breakpoint(560px) {
                 display: none;
@@ -100,7 +100,7 @@ header.header {
                     align-items: center;
                     
                     li { 
-                        margin-left: 12px;
+                        margin-left: 20px;
 
 						a:not(.button) {
 							font-size: 12px;
@@ -132,20 +132,20 @@ header.header {
         }
 
         .burger__menu {
-            display: none;
+            display: block;
 			margin-right: var(--fl1-spacing-md);
 
-            @include breakpoint(papabear) {
-                display: block;
-            }
+            // @include breakpoint(papabear) {
+            //     display: block;
+            // }
 
 			@include breakpoint(560px) {
 				margin-right: 0;
 			}
 
             i {
-                font-size: var(--fl1-font-lg);
-                color: var(--fl1-white);
+                font-size: 36px;
+                color: black;
             }
         }
     }

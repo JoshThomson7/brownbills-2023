@@ -17,7 +17,7 @@ Gallery
     ul.gallery__images { margin: 0 -10px;
         display:flex; flex-wrap:wrap; justify-content:center; clear:both; margin:0; padding:0;
 
-        li { list-style:none; padding:10px; margin:0;
+        li { list-style:none; padding:10px; margin:0; display: flex; align-items: center;
             /* Full */
             &.full__width { width:100%;}
 
