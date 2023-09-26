@@ -44,3 +44,11 @@
 @import '../modules/advanced-team-members/scss/at-archive.scss';
 
 @import 'layout/footer';
+
+.home{
+  .avb-banner__media{
+    .image{
+      min-height: 600px;
+    }
+  }
+}

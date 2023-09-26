@@ -9,7 +9,7 @@ $args = array(
 	'post_type'         => 'team',
 	'post_status'       => 'publish',
 	'orderby'           => 'menu_order',
-	'order'             => 'desc',
+	'order'             => 'asc',
 	'posts_per_page'    => -1,
 	'fields'			=> 'ids',
 );
@@ -19,10 +19,10 @@ if (get_sub_field('type') === 'custom') {
 }
 
 $team_carousel = get_sub_field('team_carousel');
-
-$team_carousel = get_sub_field('team_carousel');
 if($team_carousel) {
     $team_carousel_class[] = 'team_carousel';
+} else {
+	$team_carousel_class[] = 'team__wrap';
 }
 
 $team_query = new WP_Query($args);

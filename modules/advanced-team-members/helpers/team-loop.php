@@ -26,7 +26,7 @@ if(!empty($filter_branch_ids)){
 $team_members_args = array(
     'post_type'         => 'team',
     'post_status'       => 'publish',
-    'orderby'           => 'NAME',
+    'orderby'           => 'menu_order',
     'order'             => 'ASC',
     'posts_per_page'    => -1,
     'meta_query'        => $meta_query,
