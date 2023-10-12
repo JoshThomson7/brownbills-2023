@@ -20,31 +20,31 @@
         }
     }
 
-    &.mm-menu { background: darken($primary, 4%);
+    &.mm-menu { background: $secondary;
 
         .mm-panel { padding:0;
             .mm-navbar {
                 .mm-prev {
-                    &:before { border-color: var(--fl1-secondary); width: 11px; height: 11px;}
-                    &:after { border-color: var(--fl1-secondary); width: 11px; height: 11px;}
+                    &:before { border-color: #000; width: 11px; height: 11px;}
+                    &:after { border-color: #000; width: 11px; height: 11px;}
                 }
 
-                .mm-title { color: #fff;}
+                .mm-title { color: #000;}
             }
         }
 
         .mm-listview { margin:20px 0 0 !important;
 
             li { margin-left:20px;
-                a { color: #fff !important; padding-left:0 !important; font-size: 21px; font-weight: 600; padding: 15px 10px;
+                a { color: #000 !important; padding-left:0 !important; font-size: 21px; font-weight: 600; padding: 15px 10px;
                     span { display:inline-block; width:20px; text-align:center; margin-right:3px; font-size:20px; position:relative; top:2px;}
 
                     &.mm-prev {
-                        &:before { border-color: var(--fl1-secondary); width: 11px; height: 11px;}
+                        &:before { border-color: #000; width: 11px; height: 11px;}
                     }
 
                     &.mm-next {
-                        &:after { border-color: var(--fl1-secondary); width: 11px; height: 11px;}
+                        &:after { border-color: #000; width: 11px; height: 11px;}
                     }
                 }
 
