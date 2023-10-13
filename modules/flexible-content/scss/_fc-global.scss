@@ -120,7 +120,7 @@
             width: 100%;
 
             h2 {
-                max-width: 70%;
+                max-width: 100%;
 
                 @include breakpoint(cousinbear) {
                     max-width: 100%;
@@ -194,6 +194,10 @@ $fc_bk_colour in $fc_bk_colours {
                         }
                     }
                 }
+            }
+
+            .fc-free-text{
+                p{color: white;}
             }
 
             .fc_feature_wrapper {
