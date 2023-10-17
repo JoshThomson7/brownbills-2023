@@ -51,7 +51,7 @@
                         <nav class="top-nav">
                             <ul>
                                 <li>
-                                    <a href="/contact-us" class="button secondary tiny">
+                                    <a href="/contact-us" class="button secondary small">
                                         Contact Us
                                     </a>
                                 </li>
