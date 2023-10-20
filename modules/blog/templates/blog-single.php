@@ -26,7 +26,7 @@ $blog_author_id = $blog->author();
     <div class="max__width">
 		<div class="blog--header-nav">
 			<nav>
-				<a href="<?php echo esc_url(get_permalink(FL1_BLOG_PAGE_ID)); ?>">&lsaquo; News</a> / <a href="<?php echo $blog_cat_url ?>"><?php echo $blog_cat_name; ?></a>
+				<a href="/news">&lsaquo; News</a> / <a href="<?php echo $blog_cat_url ?>"><?php echo $blog_cat_name; ?></a>
 			</nav>
 			<aside>
 				<?php if(shortcode_exists('shared_counts')) { echo do_shortcode('[shared_counts]'); } ?>
@@ -36,9 +36,6 @@ $blog_author_id = $blog->author();
 		<h1><?php echo get_the_title($post->ID); ?></h1>
 		<date><?php echo $blog->date('M jS Y'); ?></date>
 
-		<?php if($excerpt): ?>
-			<p><?php echo $excerpt; ?></p>
-		<?php endif; ?>
     </div>
 </section>
 

@@ -1,5 +1,9 @@
 <footer class="footer" role="contentinfo">
 
+    <div class="insta-feed">
+        <?php echo do_shortcode('[instagram-feed feed=1]'); ?>
+    </div>
+
     <div class="max__width">
 
         <div class="footer-cols">
@@ -56,9 +60,9 @@
                         <li>Cecil House,<br> Norwood Street,<br> Ashford, TN23 1QT</li>
                         
                         <li class="social">
-                            <a href="https://twitter.com/brownbillstweet" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="https://www.instagram.com/brownbillsoptometrists/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://uk.linkedin.com/company/brownbills-optometrists" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
                             <a href="https://www.facebook.com/brownbillsoptometrists/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-                            <a href="https://www.instagram.com/brownbillsoptometrists/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
                         </li>
                     </ul>
                 </div>

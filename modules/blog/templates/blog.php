@@ -30,6 +30,7 @@ if($paged < 1):
 					$_post = new FL1_Blog($post_id);
 					$_post_img = $_post->image(900, 700);
 					$_post_excerpt = $_post->excerpt(45);
+					$_post_excerpt_small = $_post->excerpt(10);
 
 					$posts_not_in[] = $post_id;
 			?>
@@ -74,6 +75,7 @@ if($paged < 1):
 						<div class="blog__content">
 							<h4><a href="<?php echo $_post->url(); ?>" title="<?php echo $_post->title(); ?>"><?php echo $_post->title(); ?></a></h4>
 							<date><?php echo $_post->date('j M Y') ?></date>
+							<?php if($_post_excerpt_small): ?><p><?php echo $_post_excerpt_small; ?></p><?php endif; ?>
 						</div><!-- blog__content -->
 					</div><!-- news__widget -->
 
@@ -103,7 +105,7 @@ if($paged < 1):
 							foreach ($more_blogs['posts'] as $post_id) :
 								$_post = new FL1_Blog($post_id);
 								$_post_img = $_post->image(400, 300);
-								$_post_excerpt = $_post->excerpt(45);
+								$_post_excerpt = $_post->excerpt(25);
 						?>
 							<article class="one__third white">
 								<div class="padder">

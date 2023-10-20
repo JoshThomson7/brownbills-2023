@@ -11,8 +11,8 @@
 @import "../../../scss/inc/animations";
 
 section {
-    &.blog { padding: var(--fl1-spacing-xl) 0; display:flex; flex-wrap:wrap; justify-content: space-between;
-        &.home { padding: 40px 0;}
+    &.blog { display:flex; flex-wrap:wrap; justify-content: space-between;
+        &.home { padding: 40px 0;} 
 
         .max__width { 
             display: flex;

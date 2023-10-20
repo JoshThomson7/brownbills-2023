@@ -450,7 +450,7 @@ class FL1_CPT {
             'show_in_nav_menus'     => true,
             'show_in_admin_bar'     => true,
             'show_in_rest'          => false,
-            'supports'              => array( 'title', 'author', 'page-attributes', 'editor', 'excerpt', 'thumbnail'),
+            'supports'              => array( 'title', 'author', 'page-attributes', 'content-editor', 'excerpt', 'thumbnail'),
             'rewrite' => array(
                 'slug' => $slug,
             )
