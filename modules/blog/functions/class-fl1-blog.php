@@ -79,9 +79,9 @@ class FL1_Blog {
      * 
      * @param int trunc
      */
-    public function excerpt($trunc = 0) {
+    public function excerpt($trunc = 30) {
 
-        return $trunc ? FL1_Helpers::trunc(get_the_excerpt($this->id()), $trunc) : get_the_excerpt($this->id());
+        return trunc(get_the_excerpt($this->id()), $trunc);
 
     }
 
@@ -117,35 +117,15 @@ class FL1_Blog {
     }
 
     /**
-     * Returns the main category (first in array, index [0] via reset()).
+     * Returns the post categories.
      * 
-     * @see https://www.php.net/manual/en/function.reset.php
-     * @param string $return | See $this->get_terms()
-     */
-    public function main_category($return = null) {
-
-        $post_cats = $this->get_terms('category', $return);
-        
-        if(!empty($post_cats) && !is_wp_error($post_cats)) {
-            return reset($post_cats);
-        }
-
-        return null;
-        
-    }
-
-
-    /**
-     * Returns the service categories.
-     * 
-     * @param string $taxonomy
      * @param string $return | Accepts: all | all_with_object_id | ids | tt_ids | slugs | count | id=>parent | id=>name | id=>slug
      * @see https://developer.wordpress.org/reference/classes/wp_term_query/__construct/
      */
-    public function get_terms($taxonomy = '', $return = null) {
+    public function categories($return = null) {
 
         $args = $return ? array('fields' => $return) : array();        
-        $post_terms = wp_get_object_terms($this->id(), $taxonomy, $args);
+        $post_terms = wp_get_object_terms($this->id(), 'category', $args);
 
         if(!empty($post_terms) && !is_wp_error($post_terms)) {
             return $post_terms;
@@ -155,15 +135,22 @@ class FL1_Blog {
 
     }
 
-	/**
-     * Returns author team ID
+    /**
+     * Returns the main category (first in array, index [0] via reset()).
      * 
-     * @return int
+     * @see https://www.php.net/manual/en/function.reset.php
+     * @param string $return | See $this->categories() above
      */
-    public function author() {
+    public function main_category($return = null) {
 
-        return get_field('post_team_author', $this->id);
+        $post_cats = $this->categories($return);
+        
+        if(!empty($post_cats) && !is_wp_error($post_cats)) {
+            return reset($post_cats);
+        }
 
+        return null;
+        
     }
 
 }

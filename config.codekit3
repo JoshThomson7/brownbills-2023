@@ -1616,56 +1616,36 @@
       "oAP" : "\/modules\/advanced-video-banners\/templates\/avb.php",
       "oF" : 0
     },
-    "\/modules\/blog\/acf-json\/group_63da949d32ef8.json" : {
-      "ft" : 524288,
-      "oA" : 1,
-      "oAP" : "\/modules\/blog\/acf-json\/group_63da949d32ef8-min.json",
-      "oF" : 0,
-      "oO" : 0,
-      "oS" : 1
-    },
-    "\/modules\/blog\/assets\/css\/fl1-blog.min.css" : {
-      "aP" : 1,
-      "bl" : 0,
-      "ci" : 0,
-      "co" : 0,
-      "ft" : 16,
-      "ma" : 0,
-      "oA" : 0,
-      "oAP" : "\/modules\/blog\/assets\/css\/fl1-blog.min-min.css",
-      "oF" : 0,
-      "pg" : 0
-    },
-    "\/modules\/blog\/class-fl1-blog-helpers.php" : {
+    "\/modules\/blog\/functions\/class-fl1-blog-module.php" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/modules\/blog\/class-fl1-blog-helpers.php",
+      "oAP" : "\/modules\/blog\/functions\/class-fl1-blog-module.php",
       "oF" : 0
     },
-    "\/modules\/blog\/class-fl1-blog-module.php" : {
+    "\/modules\/blog\/functions\/class-fl1-blog-public.php" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/modules\/blog\/class-fl1-blog-module.php",
+      "oAP" : "\/modules\/blog\/functions\/class-fl1-blog-public.php",
       "oF" : 0
     },
-    "\/modules\/blog\/class-fl1-blog-public.php" : {
+    "\/modules\/blog\/functions\/class-fl1-blog.php" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/modules\/blog\/class-fl1-blog-public.php",
+      "oAP" : "\/modules\/blog\/functions\/class-fl1-blog.php",
       "oF" : 0
     },
-    "\/modules\/blog\/class-fl1-blog.php" : {
+    "\/modules\/blog\/functions\/class-fl1-blogs.php" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/modules\/blog\/class-fl1-blog.php",
+      "oAP" : "\/modules\/blog\/functions\/class-fl1-blogs.php",
       "oF" : 0
     },
     "\/modules\/blog\/index.php" : {
@@ -1676,6 +1656,28 @@
       "oAP" : "\/modules\/blog\/index.php",
       "oF" : 0
     },
+    "\/modules\/blog\/js\/_blog-min.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 1,
+      "oAP" : "\/modules\/blog\/js\/_blog-min-min.js",
+      "oF" : 0,
+      "sC" : 1,
+      "tS" : 0
+    },
+    "\/modules\/blog\/js\/_blog.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 1,
+      "oAP" : "\/modules\/blog\/js\/_blog-min.js",
+      "oF" : 0,
+      "sC" : 1,
+      "tS" : 0
+    },
     "\/modules\/blog\/scss\/_blog.scss" : {
       "aP" : 1,
       "bl" : 0,
@@ -1684,10 +1686,10 @@
       "ec" : 1,
       "ft" : 4,
       "ma" : 0,
-      "oA" : 0,
-      "oAP" : "\/modules\/blog\/assets\/css\/fl1-blog.min.css",
-      "oF" : 3,
-      "oS" : 3,
+      "oA" : 1,
+      "oAP" : "\/modules\/blog\/scss\/_blog.css",
+      "oF" : 0,
+      "oS" : 0,
       "pg" : 0,
       "sct" : 0
     },
@@ -1721,6 +1723,21 @@
       "pg" : 0,
       "sct" : 0
     },
+    "\/modules\/blog\/scss\/inc\/_blog-sidebar.scss" : {
+      "aP" : 1,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/modules\/blog\/scss\/inc\/_blog-sidebar.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
     "\/modules\/blog\/scss\/inc\/_blog-single.scss" : {
       "aP" : 1,
       "bl" : 0,
@@ -1744,14 +1761,6 @@
       "oAP" : "\/modules\/blog\/templates\/blog-archive.php",
       "oF" : 0
     },
-    "\/modules\/blog\/templates\/blog-filters.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/modules\/blog\/templates\/blog-filters.php",
-      "oF" : 0
-    },
     "\/modules\/blog\/templates\/blog-item.php" : {
       "cB" : 0,
       "ft" : 8192,
@@ -1766,6 +1775,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/modules\/blog\/templates\/blog-loop.php",
+      "oF" : 0
+    },
+    "\/modules\/blog\/templates\/blog-sidebar.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/modules\/blog\/templates\/blog-sidebar.php",
       "oF" : 0
     },
     "\/modules\/blog\/templates\/blog-single.php" : {

@@ -42,6 +42,7 @@
 @import '../modules/advanced-video-banners/scss/avb';
 @import '../modules/flexible-content/scss/flexible-content';
 @import '../modules/advanced-team-members/scss/at-archive.scss';
+@import '../modules/blog/scss/_blog.scss';
 
 @import 'layout/footer';
 
@@ -51,7 +52,7 @@
       min-height: 600px;
     }
   }
-}
+} 
 
 // WOO SINGLE PRODUCT STYLING
 .product-type-simple{

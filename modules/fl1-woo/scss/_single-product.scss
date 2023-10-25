@@ -378,7 +378,7 @@ body.single-product {
             margin-left: 20px;
             a {
                 font-family: $primaryFont;
-                background: $quaternary;
+                background: $primary;
                 color: #fff;
                 font-size: 16px;
                 font-weight: 800;
@@ -396,7 +396,7 @@ body.single-product {
                 }
 
                 &:hover {
-                    background: lighten($quaternary, 3%);
+                    background: lighten($primary, 3%);
                     transition: all 0.4s ease;
                     box-shadow: 0 3px 20px rgba(black, 0.1);
                 }

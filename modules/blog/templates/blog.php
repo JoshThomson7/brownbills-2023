@@ -1,135 +1,123 @@
 <?php
-
 /**
  * Blog
  */
 
+global $paged;
 get_header();
 
-AVB::avb_banners();
+$term = get_queried_object();
 
-$current_page = get_query_var('paged');
-$current_page = max( 1, $current_page );
+$title = 'News';
+$has_featured = true;
 
-$per_page = 15;
-$offset_start = 4;
-$offset = ( $current_page - 1 ) * $per_page + $offset_start;
+$blog_args = array(
+    'posts_per_page' => 1,
+    'paged' => $paged
+);
 
-if($paged < 1):
+$featured_blog = FL1_Blogs::get_blogs($blog_args);
+$featured_blog_id = reset($featured_blog['posts']);
+
+if($term->taxonomy === 'category' || $term->taxonomy === 'post_tag') {
+
+    $has_featured = false;
+    $title = 'Blog - '.$term->name;
+    $featured_blog_id = 0;
+
+    // Featured
+
+    $blog_args['tax_query'] = array(
+        array(
+            'taxonomy' => $term->taxonomy,
+            'field' => 'id',
+            'terms' => $term->term_id
+        )
+    );
+
+}
+
+$blog_args['posts_per_page'] = 15;
+$blog_args['post__not_in'] = array($featured_blog_id);
+$blogs = FL1_Blogs::get_blogs($blog_args);
+
+$blog_cats = FL1_Blogs::get_categories();
+
 ?>
-<section class="blog">
-	<div class="max__width">
-		<div class="fc-news">
-			<?php
-				$posts_not_in = array();
-				$featured_blog = FL1_Blog_Helpers::get_blogs(array(
-					'posts_per_page' => 1,
-				));
 
-				foreach ($featured_blog['posts'] as $post_id) :
-					$_post = new FL1_Blog($post_id);
-					$_post_img = $_post->image(900, 700);
-					$_post_excerpt = $_post->excerpt(45);
-					$_post_excerpt_small = $_post->excerpt(10);
+<section class="blog__header <?php if(!$has_featured): ?>no-featured<?php endif; ?>">
+    <div class="max__width">
+        <h1 class="blog__title"><?php echo $title; ?></h1>
 
-					$posts_not_in[] = $post_id;
-			?>
+        <?php if($has_featured): ?>
+            <article class="blog__article blog__featured">
+                <?php
+                    if($featured_blog_id):
+                    
+                        $blog = new FL1_Blog($featured_blog_id);
 
-				<article>
-					<?php if (is_array($_post_img)) : ?>
-						<figure>
-							<a href="<?php echo $_post->url(); ?>" title="<?php echo $_post->title(); ?>">
-								<img src="<?php echo $_post_img['url']; ?>" alt="<?php echo $_post->title() ?>">
-							</a>
-						</figure>
-					<?php endif; ?>
+                        // Image
+                        $blog_image = $blog->image(300, 200, true);
+                        $banner_image = '';
+                        if(!empty($blog_image)) {
+                            $banner_image = ' style="background-image: url('.$blog_image['url'].')"';
+                        } else {
+                            $banner_image = ' style="background-image: url('.get_stylesheet_directory_uri().'/img/sq-blog-placeholder.jpg)"';
+                        }
 
-					<div class="article__content">
-						<h2><a href="<?php echo $_post->url(); ?>" title="<?php echo $_post->title(); ?>"><?php echo $_post->title(); ?></a></h2>
-						<date><?php echo $_post->date('j M Y') ?></date>
-						<?php if ($_post_excerpt) : ?><p><?php echo $_post_excerpt; ?></p><?php endif; ?>
-					</div><!-- article__content -->
-				</article>
+                        // Main category
+                        $blog_cat = $blog->main_category('id=>name');
+                ?>
+                    <a class="blog__img" href="<?php echo $blog->url(); ?>" <?php echo $banner_image; ?>></a>
 
-			<?php endforeach; ?>
+                    <div class="blog__content">
 
-			<div class="news__widgets">
-				<?php
-					$featured_blogs = FL1_Blog_Helpers::get_blogs(array(
-						'posts_per_page' => 3,
-						'offset' => 1,
-					));
+                        <?php if($blog_cat): ?><h5><?php echo $blog_cat; ?></h5><?php endif; ?>
+                        <h2><a href="<?php echo $blog->url(); ?>" title="<?php echo $blog->title(); ?>"><?php echo $blog->title(); ?></a></h2>
 
-					foreach ($featured_blogs['posts'] as $post_id) :
-						$_post = new FL1_Blog($post_id);
-						$_post_img = $_post->image(400, 300);
-
-						$posts_not_in[] = $post_id;
-				?>
-
-					<div class="news__widget blog">
-						<?php if (is_array($_post_img)) : ?>
-							<a href="<?php echo $_post->url(); ?>" class="figure" style="background-image: url(<?php echo $_post_img['url']; ?>);"></a>
-						<?php endif; ?>
-
-						<div class="blog__content">
-							<h4><a href="<?php echo $_post->url(); ?>" title="<?php echo $_post->title(); ?>"><?php echo $_post->title(); ?></a></h4>
-							<date><?php echo $_post->date('j M Y') ?></date>
-							<?php if($_post_excerpt_small): ?><p><?php echo $_post_excerpt_small; ?></p><?php endif; ?>
-						</div><!-- blog__content -->
-					</div><!-- news__widget -->
-
-				<?php endforeach; ?>
-			</div><!-- news__widgets -->
-		</div>
-	</div>
+                        <date><?php echo $blog->date('M jS Y') ?></date>
+                        
+                        <div class="blog__more">
+                            <a href="<?php echo $blog->url(); ?>" class="button primary gradient">
+                                <span>Read more</span>
+                            </a>
+                        </div><!-- blog__more -->
+                    </div>
+                <?php endif; ?>
+            </article>
+        <?php endif; ?>
+    </div>
 </section>
-<?php endif; ?>
 
-<?php
-	$args = array(
-		'paged' => $current_page,
-		'posts_per_page' => $per_page,
-		'offset' => $offset,
-	);
+<section class="blog">
+    <div class="max__width">
+        <div class="blog__loop grid">
+            <?php include FL1_BLOG_PATH .'templates/blog-loop.php'; ?>
+        </div>
 
-	$more_blogs = FL1_Blog_Helpers::get_blogs($args);
-	if(!empty($more_blogs['posts'])):
-?>
-	<div class="flexible__content">
-		<section class="fc-layout fc_grid_boxes">
-			<div class="fc-layout-container" style="padding: 16px 0 40px;">
-				<div class="max__width">
-					<div class="grid__boxes__wrapper">
-						<?php
-							foreach ($more_blogs['posts'] as $post_id) :
-								$_post = new FL1_Blog($post_id);
-								$_post_img = $_post->image(400, 300);
-								$_post_excerpt = $_post->excerpt(25);
-						?>
-							<article class="one__third white">
-								<div class="padder">
-									<?php if(is_array($_post_img)): ?>
-										<figure style="background-image: url(<?php echo $_post_img['url'] ?>)"><a href="<?php echo $_post->url(); ?>"></a></figure>
-									<?php endif; ?>
-
-									<div class="grid-box-content left">
-										<a href="<?php echo $_post->url(); ?>">
-											<h3><?php echo $_post->title(); ?></h3>
-										</a>
-										<date><?php echo $_post->date('j M Y') ?></date>
-										<?php if($_post_excerpt): ?><p><?php echo $_post_excerpt; ?></p><?php endif; ?>
-									</div><!-- grid__box__content -->
-								</div><!-- padder -->
-							</article>
-						<?php endforeach; ?>
-					</div><!-- grid__boxes__wrapper -->
-
-					<?php FL1_Helpers::pagination($more_blogs['max_num_pages']); ?>
-				</div><!-- max__width -->
-			</div><!-- fc-layout-container -->
-		</section><!-- fc_grid_boxes -->
-	</div><!-- flexible__content -->
-<?php endif; ?>
+        <div class="blog__filters">
+            <article>
+                <ul>
+                    <li>
+                        <a href="<?php echo home_url('/blog/'); ?>" <?php if(!$term->taxonomy): ?>class="active"<?php endif; ?>>Recent articles</a>
+                    </li>
+                    <?php
+                        if(!empty($blog_cats)):
+                            foreach($blog_cats as $blog_cat):
+                                $active = '';
+                                if($term->term_id == $blog_cat->term_id) {
+                                    $active = 'active';
+                                }
+                        ?>
+                            <li>
+                                <a href="<?php echo get_term_link($blog_cat, 'category'); ?>" class="<?php echo $active; ?>"><?php echo $blog_cat->name; ?></a>
+                            </li>
+                        <?php endforeach; ?>
+                    <?php endif; ?>
+                </ul>
+            </article>
+        </div>
+    </div><!-- max__width -->
+</section><!-- blog -->
 
 <?php get_footer(); ?>

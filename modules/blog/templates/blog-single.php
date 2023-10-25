@@ -13,60 +13,32 @@ $blog = new FL1_Blog($post->ID);
 
 // Image
 $blog_image = $blog->image(900, 700, true);
+$banner_image = '';
+if(!empty($blog_image)) {
+    $banner_image = ' style="background-image: url('.$blog_image['url'].')"';
+}
 
 // Main category
-$blog_cat_id = $blog->main_category('ids');
-$blog_cat_url = get_term_link($blog_cat_id, 'category');
-$blog_cat_name = $blog->main_category('id=>name');
-$excerpt = $blog->excerpt(1000);
-$blog_author_id = $blog->author();
+$blog_cat = $blog->main_category('id=>name');
 ?>
 
-<section class="blog--header">
-    <div class="max__width">
-		<div class="blog--header-nav">
-			<nav>
-				<a href="/news">&lsaquo; News</a> / <a href="<?php echo $blog_cat_url ?>"><?php echo $blog_cat_name; ?></a>
-			</nav>
-			<aside>
-				<?php if(shortcode_exists('shared_counts')) { echo do_shortcode('[shared_counts]'); } ?>
-			</aside>
-		</div>
+<div class="max__width">
 
-		<h1><?php echo get_the_title($post->ID); ?></h1>
-		<date><?php echo $blog->date('M jS Y'); ?></date>
+    <div class="blog__single">
 
-    </div>
-</section>
+        <article>            
 
-<?php FC_Helpers::flexible_content(); ?>
+            <div class="blog__info">
+                <h5><a href="<?php echo esc_url(get_permalink(get_page_by_path('news'))); ?>">&lsaquo; Blog</a> / <?php echo $blog_cat; ?></h5>
+                <h1><?php echo get_the_title($post->ID); ?></h1>
+                <date><?php echo $blog->date('M jS Y') ?></date>
+            </div>
 
-<?php
-	if($blog_author_id):
-		$_team = new FL1C_Team_Member($blog_author_id);
-		$team_img = $_team->image(400, 400);
-?>
-	<div class="max__width">
-		<div class="blog--author">
-			<?php if(is_array($team_img)): ?>
-				<figure>
-					<img src="<?php echo $team_img['url']; ?>" alt="<?php echo $_team->name(); ?>">
-				</figure>
-			<?php endif; ?>
+        </article>
 
-			<div class="blog--author-content">
-				<h4><?php echo $_team->name(); ?></h4>
-				<h6><?php echo $_team->job_title(); ?></h6>
+        <?php FC_Helpers::flexible_content(); ?>
 
-				<?php if($_team->bio()): ?>
-					<div class="description">
-						<p><?php echo $_team->bio(); ?></p>
-					</div>
-				<?php endif; ?>
-
-			</div>
-		</div>
-	</div>
-<?php endif ?>
+    </div><!-- blog__single -->
+</div><!-- max__width -->
 
 <?php get_footer(); ?>

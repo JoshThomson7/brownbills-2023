@@ -1,21 +1,22 @@
 .blog__filters {
     margin: 40px 0 20px;
-    max-width: 210px;
+    max-width: 275px;
     width: 100%;
-    @include breakpoint(brotherbear) {margin: 0;}
-    @include breakpoint(mamabear){max-width: 100%;}
+
+    @include breakpoint(mamabear){
+        max-width: 100%;
+    }
 
     article { 
         h4 { 
-            font-size: 23px;
-            color: var(--fl1-primary);
+            font-size: 19px;
+            color: $primary;
             margin-bottom: 20px;
-            font-weight: 600;
         }
-        margin-bottom: 40px;
+        margin-bottom: 20px;
 
         &.search { 
-            background: var(--fl1-lightgrey);
+            background: $secondary;
             padding: 20px;
             border-radius: 4px;
 
@@ -25,22 +26,25 @@
                 padding: 15px;
                 color: $secondary;
                 font-size: 15px;
+                border-radius: 4px;
                 width: 100%;
-                font-family: var(--fl1-primary-font);
+                font-family: $primaryFont;
             }
         }
 
         .tagcloud { 
+            padding: 20px 18px;
             a { 
                 background: $lightgrey;
                 padding: 5px 10px;
+                border-radius: 20px;
                 margin: 2px;
                 color: $text;
                 display: inline-block;
                 font-size: 13px !important;
 
                 &:hover { 
-                    background: var(--fl1-secondary);
+                    background: $primary;
                     color: #fff;
                 }
             }
@@ -50,10 +54,10 @@
     ul { 
         li { 
             a { 
-                padding: 8px 16px; color: $text; display: flex; align-items: center; transition: all .3s ease; font-size: 16px; font-weight: 600;
-                &:hover { color: var(--fl1-secondary); }
+                padding: 10px 20px; color: $primary; display: flex; align-items: center; height: 100%; transition: all .3s ease; text-align: center; border-radius: 50px; margin-right: 5px; font-size: 14px; font-weight: 500;
+                &:hover { color: $primary; }
 
-                &.active { background: var(--fl1-secondary); color: #fff;}
+                &.active { background: $primary; color: #fff;}
             }
         }
     }

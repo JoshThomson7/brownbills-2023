@@ -9,12 +9,11 @@
 
 .blog__loop { 
     flex: 1;
-    padding-right: 5%;
+    padding-right: 30px;
 
-    @include breakpoint(mamabear) {
-		width: 100%;
-		padding-right: 0;
-	}
+    @include breakpoint(mamabear) { 
+        padding-right: 0;
+    }
 }
 
 article.blog__article { 
@@ -23,33 +22,38 @@ article.blog__article {
     display: flex;
     justify-content: space-between;
     margin: 20px 0;
-    border-radius: var(--fl1-border-radius);
-    padding: 0 20px 0 0;
-    @include breakpoint(mamabear) {padding: 0;}
-    box-shadow: 0 0 10px rgba(0,0,0,.1);
+    border-bottom: 1px $border solid;
+    padding: 20px 20px 40px 0;
 
     &:last-of-type { border-bottom: none;}
 
-    @include breakpoint(brotherbear) { 
+    @include breakpoint(papabear) { 
         flex-direction: column;
-		padding-right: 0;
+    }
+
+    @include breakpoint(mamabear) { 
+        padding: 20px 0px 40px 0;
     }
 
     .blog__content {
         width: 50%;
-        padding: 32px 24px 32px 32px;
+        padding: 40px 20px 40px 40px;
         display: flex;
         flex-direction: column;
 
-        @include breakpoint(brotherbear) { 
+        @include breakpoint(papabear) { 
             width: 100%;
-            padding: 24px;
+            padding: 20px 0 40px;
         }
 
-        h5 { font-size: 13px; font-weight: 800; color: $primary; padding:0 0 10px; text-transform: uppercase; letter-spacing: 1px;}
+        @include breakpoint(sisterbear){
+            padding: 20px 0 0;
+        }
+
+        h5 { font-size: 13px; font-weight: 500; color:$primary; padding:0 0 10px; text-transform: uppercase; letter-spacing: 1px;}
         
-        h2 { font-size: 28px; text-transform: none; color: $text; position: relative; margin: 0; font-weight: 600; line-height: 1.4;
-            a { color: $text;
+        h2 { font-size: 25px; text-transform: none; color: $secondary; position: relative; margin: 0; font-weight: 600; line-height: 32px;
+            a { color: $secondary;
                 &:hover { color: $primary;}
             }
         }
@@ -74,7 +78,6 @@ article.blog__article {
             
             a {
                 color: #fff;
-                padding: 12px 24px;
             }
         }
     }
@@ -84,8 +87,8 @@ article.blog__article {
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
-        min-height: 290px;
-        border-radius: var(--fl1-border-radius) 0 0 var(--fl1-border-radius);
+        min-height: 250px;
+        border-radius: 5px;
         box-shadow: 0 0 10px rgba(0,0,0,.1);
         filter: grayscale(0.3);
         transition: all .3s ease;
@@ -95,10 +98,9 @@ article.blog__article {
             transition: all .3s ease;
         }
 
-        @include breakpoint(brotherbear) { 
+        @include breakpoint(papabear) { 
             width: 100%;
             min-height: 260px;
-			border-radius: var(--fl1-border-radius) var(--fl1-border-radius) 0 0;
         }
     }
 
@@ -112,5 +114,21 @@ article.blog__article {
             font-size: 33px;
             line-height: 37px;
         }
+    }
+
+    &.preloader {
+        .blog__content {
+            h5 { @extend .is-loading; height: 19px; width: 21%}
+            h2 { @extend .is-loading; height: 28px; width: 60%}
+            date { @extend .is-loading; height: 17px; width: 19%}
+            
+            p { @extend .is-loading; height: 19px; width: 100%; margin-bottom: 3px;}
+            p.p2 { width: 70%;}
+            p.p3 { width: 40%; margin-bottom: 30px}
+
+            .blog__more { @extend .is-loading; height: 17px; width: 15%;}
+        }
+
+        figure { @extend .is-loading; width: 50%; min-height: 360px; border-radius: 5px;}
     }
 }

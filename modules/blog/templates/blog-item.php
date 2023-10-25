@@ -9,10 +9,12 @@
 $blog = new FL1_Blog($blog_id);
 
 // Image
-$blog_image = $blog->image(900, 500, true);
+$blog_image = $blog->image(300, 300, true);
 $banner_image = '';
 if(!empty($blog_image)) {
     $banner_image = ' style="background-image: url('.$blog_image['url'].')"';
+} else {
+    $banner_image = ' style="background-image: url('.get_stylesheet_directory_uri().'/img/sq-blog-placeholder.jpg)"';
 }
 
 // Main category
@@ -25,14 +27,10 @@ $blog_cat = $blog->main_category('id=>name');
         <?php if($blog_cat): ?><h5><?php echo $blog_cat; ?></h5><?php endif; ?>
         <h2><a href="<?php echo $blog->url(); ?>" title="<?php echo $blog->title(); ?>"><?php echo $blog->title(); ?></a></h2>
 
-        <date>
-            <?php echo $blog->date('M jS Y') ?>
-        </date>
+        <date><?php echo $blog->date('M jS Y') ?></date>
         
-        <p><?php echo $blog->excerpt(32); ?></p>
-
         <div class="blog__more">
-            <a href="<?php echo $blog->url(); ?>" class="button secondary tiny">
+            <a href="<?php echo $blog->url(); ?>" class="button primary small">
                 <span>Read more</span>
             </a>
         </div><!-- blog__more -->

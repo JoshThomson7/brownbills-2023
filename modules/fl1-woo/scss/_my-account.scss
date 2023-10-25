@@ -76,7 +76,7 @@ body.woocommerce-account {
                 margin-bottom: 20px;
                 padding: 20px;
                 border-radius: 3px;
-                background: $tertiary;
+                background: $primary;
                 font-size: 15px;
                 line-height: 26px;
                 mark {
@@ -273,7 +273,7 @@ body.woocommerce-account {
             margin-bottom: 20px;
             padding: 20px;
             border-radius: 3px;
-            background: $tertiary;
+            background: $primary;
             font-size: 15px;
             line-height: 26px;
             mark {
@@ -525,8 +525,8 @@ body.woocommerce-account {
                                     color: $success;
                                 }
                                 &.on-hold {
-                                    border: 1px solid darken($tertiary, 20%);
-                                    color: darken($tertiary, 20%);
+                                    border: 1px solid darken($primary, 20%);
+                                    color: darken($primary, 20%);
                                 }
                                 &.failed {
                                     border: 1px solid tomato;

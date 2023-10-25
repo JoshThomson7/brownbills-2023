@@ -42,7 +42,7 @@
         font-size: 14px;
         font-weight: 600;
         line-height: 20px;
-        background: $tertiary;
+        background: $primary;
         margin: 20px 0;
         @include pretty-checkradio("label", "\f0c8", "\f14a");
         label {
@@ -52,7 +52,7 @@
 
     #apm_additional_info {
         padding: 20px;
-        background: $tertiary;
+        background: $primary;
         margin-top: 10px;
         h3 {
             font-size: 17px;
