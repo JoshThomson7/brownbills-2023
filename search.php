@@ -36,7 +36,6 @@ global $post, $product;
 			
 			<div class="deals__search__found">
 				<h2>Here's what we found for <strong><?php echo $s; ?></strong>:</h2>
-				<?php pagination('', 4, false); ?>
 			</div>
 
 			<div class="deals__wrapper do__flex deals__cat">
@@ -45,9 +44,6 @@ global $post, $product;
 					while(have_posts() ) : the_post();
 
 					$_product = wc_get_product(get_the_ID());
-
-					$merchant_obj = get_field('deal_merchant');
-					$merchant_id = $merchant_obj->ID;
 
 					$attachment_id = get_post_thumbnail_id();
 					$prod_image = vt_resize( $attachment_id,'' , 700, 585, true);
@@ -88,8 +84,6 @@ global $post, $product;
 					<?php endwhile; wp_reset_postdata(); ?>
 				
 				</div><!-- deals__wrapper -->
-
-				<?php pagination('', 4, true); ?>
 
 				<?php else: ?>
 

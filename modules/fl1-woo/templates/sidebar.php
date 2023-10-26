@@ -20,7 +20,7 @@ if( is_shop() || is_tax(array('product_cat', 'product_tag'))  || is_search()):
     			<div>
     				<label class="screen-reader-text" for="s">Search for:</label>
     				<input type="text" value="" name="s" id="s">
-    				<button type="submit" id="searchsubmit"><i class="ion-ios-search-strong"></i></button>
+    				<button type="submit" id="searchsubmit"><i class="fal fa-search"></i></button>
     			</div>
     		</form>
         </div><!-- wc__widget -->

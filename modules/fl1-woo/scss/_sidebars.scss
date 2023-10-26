@@ -17,16 +17,16 @@
     .wc__widget { padding: 5px 0 20px 0;
 
         &.wc__sidebar__search {
-            h2 { color: darken($text, 15%);}
+            h2 { color: $secondary; font-weight: bold;} 
         }
 
-        h2 { font-size: 20px; color: $text; margin-bottom: 10px; text-transform: uppercase;}
+        h2 { font-size: 20px; color: $secondary; font-weight: bold; margin-bottom: 10px; text-transform: uppercase;}
 
         form {
             label { display: none;}
 
             div { display: flex; flex-wrap:wrap;
-                input[type="text"] { background: #fff; border: none; padding: 15px; font-family: $primaryFont; font-size:14px; color: $text; width: 78%; border-bottom: 1px $text solid;}
+                input[type="text"] { background: #fff; border: none; padding: 15px; font-family: $primaryFont; font-size:14px; color: $text; width: 78%; border: 1px $text solid;}
 
                 button { font-family: $primaryFont; font-size: 20px; line-height: 0; background: $primary; color: #fff; font-weight: 700; width: 150px; border-radius: unset; border: none; cursor: pointer; width: 22%; transition: all .4s ease;
                     &:hover { background: $text; transition: all .4s ease;}
@@ -38,17 +38,17 @@
             li {
                 a { color: $text; padding: 5px 0; display: flex;
                     &:hover { color: $primary;}
-                    &:before { font-family: 'Ionicons'; display: block; font-weight:normal; font-size:16px; color:$primary; content: "\f401"; letter-spacing: 10px;}
-                }
+                    // &:before { font-family: "Font Awesome 6 Pro"; display: block; font-weight:normal; font-size:16px; color:$primary; content: "\f401"; letter-spacing: 10px;}
+                } 
 
                 span { font-size: 12px; padding-left: 5px;}
 
                 @include pretty-checkradio("label", "\f111", "\f058");
 
                 &.current-cat {
-                    a {
-                        &:before { content: "\f400";}
-                    }
+                    text-decoration: underline;
+
+                    a{font-weight: bold;}
                 }
 
                 ul { margin: 0 0 0 20px;}

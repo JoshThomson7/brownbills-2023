@@ -400,6 +400,17 @@
       "q" : 90,
       "rq" : 75
     },
+    "\/img\/couple-wearing-specs (1).webp" : {
+      "ft" : 8388608,
+      "iS" : 106446,
+      "oA" : 0,
+      "oAP" : "\/img\/couple-wearing-specs (1).webp",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-default",
+      "rq" : 75
+    },
     "\/img\/fl1-icon.svg" : {
       "ft" : 2097152,
       "miP" : 0,
@@ -2389,8 +2400,8 @@
       "ft" : 4,
       "ma" : 0,
       "oA" : 0,
-      "oAP" : "\/modules\/fl1-woo\/scss\/fl1-woo.css",
-      "oF" : 0,
+      "oAP" : "\/modules\/fl1-woo\/assets\/fl1-woo.min.css",
+      "oF" : 2,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0

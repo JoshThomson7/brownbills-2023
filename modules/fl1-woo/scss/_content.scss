@@ -8,10 +8,12 @@
 .wc__content { padding: 0; width: 100%;
     @include breakpoint(grandpabear) { width: 100%;}
 
-    .wc__filters { display: none; margin-bottom: 40px;
-        @include breakpoint(grandpabear) { display: block;}
+    .wc__filters {margin-bottom: 40px;
+        // @include breakpoint(grandpabear) { display: block;}
 
-        a { display: block; background: $secondary; padding: 20px; text-align: center; font-size: 18px; font-weight: 600; color: darken($text, 15%);}
+        a { padding: 20px; text-align: center; font-size: 18px; font-weight: bold; color: $primary;
+            &:hover{color: $secondary;}
+        }
     }
 
     .wc__page__title { padding: 0 0 20px; display: flex; justify-content: space-between; align-items: center;
