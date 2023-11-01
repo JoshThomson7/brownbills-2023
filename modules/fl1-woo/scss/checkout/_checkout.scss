@@ -25,7 +25,7 @@ body.woocommerce-checkout {
     }
 
     .wc__wrapper {
-        max-width: 960px;
+        max-width: 960px; flex-direction: column;
         @include breakpoint(cousinbear) {
             padding: 0 20px;
         }

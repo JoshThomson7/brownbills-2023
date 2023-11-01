@@ -1138,6 +1138,9 @@ table.shop_table tbody .wc__cart__product--meta ul li span {
 .wc__sidebar .wc__widget ul {
   margin: 0;
 }
+.wc__sidebar .wc__widget ul li {
+  list-style: disc;
+}
 .wc__sidebar .wc__widget ul li a {
   color: #000;
   padding: 5px 0;
@@ -1207,6 +1210,9 @@ table.shop_table tbody .wc__cart__product--meta ul li span {
 }
 .wc__sidebar .wc__widget ul li ul {
   margin: 0 0 0 20px;
+}
+.wc__sidebar .wc__widget ul li ul li {
+  list-style: circle;
 }
 .wc__sidebar .wc__widget select {
   -webkit-appearance: none;
@@ -3378,6 +3384,7 @@ body.woocommerce-checkout header.header .header__main .burger__menu {
 }
 body.woocommerce-checkout .wc__wrapper {
   max-width: 960px;
+  flex-direction: column;
 }
 @media (max-width: 800px) {
   body.woocommerce-checkout .wc__wrapper {

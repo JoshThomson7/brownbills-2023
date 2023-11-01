@@ -57,7 +57,7 @@
 // WOO SINGLE PRODUCT STYLING
 .product-type-simple{
   .price{
-    font-size: 21px; font-weight: 900; font-family: $primaryFont; margin: 30px 0;
+    font-size: 20px; font-weight: 900; font-family: $primaryFont; margin: 30px 0;
   } 
 
   form{
@@ -88,7 +88,7 @@
   // @include breakpoint(800px){flex-direction: column;}
 
   .price{
-    font-size: 21px; font-weight: 900; font-family: $primaryFont; margin: 30px 0;
+    font-size: 20px; font-weight: 900; font-family: $primaryFont; margin: 30px 0;
   }
 
   .woocommerce-product-gallery{
@@ -250,8 +250,8 @@
 
 .products {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 15px;
   padding: 0!important;
   
   .product {
@@ -271,11 +271,11 @@
     }
 
     &.outofstock{
-      &::after{
+      &::before{
         content: "Out of Stock";
         display: block;
         position: relative;
-        top: 0;
+        top: 0; 
         right: 0;
         background-color: red;
         color: white;
@@ -293,11 +293,10 @@
     }
     
     .woocommerce-loop-product__title {
-      font-size: 1.2rem;
       margin: 10px 0;
       color: $primary;
       font-size: 24px;
-      font-weight: 900;
+      font-weight: 600;
     }
     
     .price {
@@ -355,6 +354,18 @@
   }
 }
 
+.out-of-stock{
+  font-weight: bold; color: red;
+}
+
+// VIEW BASKET
+.added_to_cart{
+  color: $primary;
+  text-align: center;
+  margin-top: 10px;
+  text-decoration: underline;
+}
+
 // SHIPPING
 #calc_shipping_state_field, #calc_shipping_postcode_field, #calc_shipping_city_field{
   input{
@@ -386,10 +397,14 @@
 
 .select2-container .select2-selection--single .select2-selection__rendered{text-align: left!important;}
 
+.shipping-calculator-form{
+  .button{background: $primary;}
+}
+
 // ROYAL MAIL OPTIONS
 #shipping_method{
-  li{margin-bottom: 15px; display: flex; align-items: flex-start;
-    input{margin: 0;}
+  li{margin-bottom: 15px; display: flex; align-items: center;
+    input{margin-right: 5px; margin-top: 0;}
   }
 }
 

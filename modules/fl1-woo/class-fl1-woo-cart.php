@@ -136,7 +136,7 @@ class FL1_Woo_Cart {
     }
 
     public function continue_shopping() {
-        echo '<div class="wc__continue__shopping"><a href="'.esc_url(home_url()).'/products'.'">Continue shopping</a></div>';
+        echo '<div class="wc__continue__shopping"><a href="'.esc_url(home_url()).'/shop'.'">Continue shopping</a></div>';
     }
 
     /**
