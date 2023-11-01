@@ -57,7 +57,7 @@ $blog_cats = FL1_Blogs::get_categories();
                         $blog = new FL1_Blog($featured_blog_id);
 
                         // Image
-                        $blog_image = $blog->image(300, 200, true);
+                        $blog_image = $blog->image(750, 500, true);
                         $banner_image = '';
                         if(!empty($blog_image)) {
                             $banner_image = ' style="background-image: url('.$blog_image['url'].')"';
