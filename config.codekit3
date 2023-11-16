@@ -400,17 +400,6 @@
       "q" : 90,
       "rq" : 75
     },
-    "\/img\/couple-wearing-specs (1).webp" : {
-      "ft" : 8388608,
-      "iS" : 106446,
-      "oA" : 0,
-      "oAP" : "\/img\/couple-wearing-specs (1).webp",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "ou" : "lpckwebp-default",
-      "rq" : 75
-    },
     "\/img\/fl1-icon.svg" : {
       "ft" : 2097152,
       "miP" : 0,
@@ -445,6 +434,17 @@
       "oT" : 1,
       "ou" : "lpckwebp-none",
       "q" : 90,
+      "rq" : 75
+    },
+    "\/img\/shop-img.webp" : {
+      "ft" : 8388608,
+      "iS" : 106446,
+      "oA" : 0,
+      "oAP" : "\/img\/shop-img.webp",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-default",
       "rq" : 75
     },
     "\/img\/squares.svg" : {

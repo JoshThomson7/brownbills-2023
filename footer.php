@@ -1,8 +1,10 @@
 <footer class="footer" role="contentinfo">
 
-    <div class="insta-feed">
-        <?php echo do_shortcode('[instagram-feed feed=1]'); ?>
-    </div>
+    <?php if(is_front_page() || is_page('about-us') || is_page('our-team') || is_page('contact-us')): ?>
+        <div class="insta-feed">
+            <?php echo do_shortcode('[instagram-feed feed=1]'); ?>
+        </div>
+    <?php endif; ?>
 
     <div class="max__width">
 
