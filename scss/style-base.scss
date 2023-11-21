@@ -638,7 +638,6 @@
 }
 
 // TEST CENTRE MAPS
-
 #wpsl-result-list li p{
   display: flex;
   flex-direction: column;
@@ -649,3 +648,8 @@
   min-width: 256px !important;
   margin: 0 0 5px 0!important;
 }
+
+// PAYPAL BUTTONS
+.buttons-container{display: flex; justify-content: center;}
+
+#ppcp-messages{display: none;} 

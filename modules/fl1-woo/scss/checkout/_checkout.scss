@@ -254,6 +254,7 @@ body.woocommerce-checkout {
         p {
             font-size: 14px;
             line-height: 20px;
+            margin-top: 20px;
             a {
                 color: var(--fl1-text);
                 font-weight: 700;
@@ -340,6 +341,7 @@ body.woocommerce-checkout {
         margin: 20px auto 0;
         max-width: 520px;
         width: 100%;
+        display: none;
     }
 
     .woocommerce-order-pay,

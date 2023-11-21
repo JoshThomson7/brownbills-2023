@@ -4857,6 +4857,7 @@ body.woocommerce-checkout .woocommerce-terms-and-conditions-wrapper {
 body.woocommerce-checkout .woocommerce-terms-and-conditions-wrapper p {
   font-size: 14px;
   line-height: 20px;
+  margin-top: 20px;
 }
 body.woocommerce-checkout .woocommerce-terms-and-conditions-wrapper p a {
   color: var(--fl1-text);
@@ -4932,6 +4933,7 @@ body.woocommerce-checkout .wc__checkout__cards {
   margin: 20px auto 0;
   max-width: 520px;
   width: 100%;
+  display: none;
 }
 body.woocommerce-checkout .woocommerce-order-pay,
 body.woocommerce-checkout .woocommerce-order-details {

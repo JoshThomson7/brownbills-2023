@@ -27,7 +27,7 @@ $shop_image = ' style="background-image: url('.get_stylesheet_directory_uri().'/
     <div class="wc__content<?php if($wc_sidebar && (is_shop() || is_tax(array('product_cat', 'product_tag'))  || is_search()) ) { echo ' wc__has__sidebar'; } ?>">
         <?php if(($wc_sidebar) && !is_shop()): ?>
             <div class="wc__filters">
-                <a href="/shop"><i class="fal fa-chevron-left"></i> Back to Shop</a>
+                <a href="javascript:window.history.back();"><i class="fal fa-chevron-left"></i> Back to Shop</a>
             </div><!-- wc__filters -->
         <?php endif; ?>
 
