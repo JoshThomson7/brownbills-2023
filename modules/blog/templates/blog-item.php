@@ -9,7 +9,7 @@
 $blog = new FL1_Blog($blog_id);
 
 // Image
-$blog_image = $blog->image(300, 300, true);
+$blog_image = $blog->image(400, 300, false);
 $banner_image = '';
 if(!empty($blog_image)) {
     $banner_image = ' style="background-image: url('.$blog_image['url'].')"';
