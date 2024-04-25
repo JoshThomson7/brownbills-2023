@@ -410,6 +410,19 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
+    "\/img\/logo.png" : {
+      "ft" : 32768,
+      "iS" : 13150,
+      "oA" : 0,
+      "oAP" : "\/img\/logo.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
     "\/img\/select-arrow-down-white.png" : {
       "ft" : 32768,
       "iS" : 386,
