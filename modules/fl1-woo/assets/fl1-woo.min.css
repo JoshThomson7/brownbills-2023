@@ -16,8 +16,8 @@
   --fl1-warning: #ffc458;
   --fl1-error: tomato;
   --fl1-white: #fff;
-  --fl1-primary-font: "Quicksand", sans-serif;
-  --fl1-secondary-font: "Quicksand", sans-serif;
+  --fl1-primary-font: "Montserrat", sans-serif;
+  --fl1-secondary-font: "Montserrat", sans-serif;
   --fl1-base-font-size: 1rem;
   --fl1-font-xxxl: 2.5rem;
   --fl1-font-xxl: 2rem;
@@ -620,7 +620,7 @@ table.shop_table tbody .wc__cart__product--meta ul li span {
   border: none;
   border-radius: 3px;
   text-align: center;
-  font-family: "Quicksand", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 .wc-single-product--ad .wc-single-product--add-to-cart .wc-variable .wc-variation label .variation-price {
   padding-left: 40px;
@@ -689,7 +689,7 @@ table.shop_table tbody .wc__cart__product--meta ul li span {
 }
 .wc-single-product--ad .wc-single-product--add-to-cart .wc-add-to-cart--button .single_add_to_cart_button,
 .wc-single-product--ad .wc-single-product--add-to-cart .wc-add-to-cart--button .wc-add-to-cart-button {
-  font-family: "Quicksand", sans-serif;
+  font-family: "Montserrat", sans-serif;
   background: #203e5f;
   color: #fff;
   font-size: 16px;
@@ -729,8 +729,7 @@ table.shop_table tbody .wc__cart__product--meta ul li span {
   margin-right: 8px;
 }
 .wc-single-product--ad .wc-single-product--add-to-cart .wc-add-to-cart--button .wc-add-to-wishlist:hover i {
-  -webkit-animation: pulse 1s infinite;
-          animation: pulse 1s infinite;
+  animation: pulse 1s infinite;
 }
 .wc-single-product--ad .wc-single-product--add-to-cart .wc-continue {
   display: flex;
@@ -748,7 +747,7 @@ table.shop_table tbody .wc__cart__product--meta ul li span {
   max-height: 60px;
 }
 .wc-single-product--ad .wc-single-product--add-to-cart .wc-continue a {
-  font-family: "Quicksand", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 14px;
   font-weight: 800;
   padding: 23px 20px;
@@ -795,7 +794,7 @@ table.shop_table tbody .wc__cart__product--meta ul li span {
   border: none;
   padding: 15px 10px;
   width: auto;
-  font-family: "Quicksand", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 16px;
   width: 100%;
   font-weight: 400;
@@ -841,8 +840,7 @@ table.shop_table tbody .wc__cart__product--meta ul li span {
 }
 .wc-single-product--ad .wc-single-product--add-to-cart .wc-add-to-cart-notice.display {
   display: block;
-  -webkit-animation: fadeInUp 0.3s ease-in;
-          animation: fadeInUp 0.3s ease-in;
+  animation: fadeInUp 0.3s ease-in;
 }
 .wc-single-product--ad .wc-single-product--add-to-cart .wc-add-to-cart-notice.has-errors {
   display: block;
@@ -877,14 +875,12 @@ table.shop_table tbody .wc__cart__product--meta ul li span {
   border-radius: var(--fl1-border-radius-xl);
   text-align: center;
   padding: 4px var(--fl1-border-radius-s);
-  -webkit-transform: scale(1);
-          transform: scale(1);
+  transform: scale(1);
   transition: all 0.3s ease;
 }
 .wc-single-product--categories a:hover {
   transition: all 0.3s ease;
-  -webkit-transform: scale(1.03);
-          transform: scale(1.03);
+  transform: scale(1.03);
 }
 .wc-single-product--message {
   margin: var(--fl1-spacing-m) 0;
@@ -1026,7 +1022,7 @@ table.shop_table tbody .wc__cart__product--meta ul li span {
   margin-left: 20px;
 }
 .wc-single-product .wc-single-float-button a {
-  font-family: "Quicksand", sans-serif;
+  font-family: "Montserrat", sans-serif;
   background: #203e5f;
   color: #fff;
   font-size: 16px;
@@ -1111,14 +1107,14 @@ table.shop_table tbody .wc__cart__product--meta ul li span {
   background: #fff;
   border: none;
   padding: 15px;
-  font-family: "Quicksand", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 14px;
   color: #000;
   width: 78%;
   border: 1px #000 solid;
 }
 .wc__sidebar .wc__widget form div button {
-  font-family: "Quicksand", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 20px;
   line-height: 0;
   background: #203e5f;
@@ -1226,7 +1222,7 @@ table.shop_table tbody .wc__cart__product--meta ul li span {
   border: none;
   padding: 15px 10px;
   width: auto;
-  font-family: "Quicksand", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 16px;
   font-weight: 400;
   color: #1a1a1a;
@@ -1249,7 +1245,7 @@ table.shop_table tbody .wc__cart__product--meta ul li span {
   padding: 5px 0;
 }
 .wc__sidebar .widget_berocket_aapf_single .berocket_aapf_reset_button {
-  font-family: "Quicksand", sans-serif;
+  font-family: "Montserrat", sans-serif;
   background: #203e5f;
   color: #fff;
   font-size: 16px;
@@ -1362,7 +1358,7 @@ table.shop_table tbody .wc__cart__product--meta ul li span {
   text-transform: uppercase;
 }
 .wc__content .wc__page__title .woocommerce-ordering select {
-  font-family: "Quicksand", sans-serif;
+  font-family: "Montserrat", sans-serif;
   border: 1px #D0D5DA solid;
   padding: 10px;
   font-size: 16px;
@@ -2065,7 +2061,7 @@ body.woocommerce-cart .woocommerce p.cart-empty {
 .wc__login__register .wc__login__register--form form .wc__form__row .wc__form__field input[type=text],
 .wc__login__register .wc__login__register--form form .wc__form__row .wc__form__field input[type=email],
 .wc__login__register .wc__login__register--form form .wc__form__row .wc__form__field input[type=password] {
-  font-family: "Quicksand", sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: var(--fl1-text);
   font-size: 16px;
   padding: 20px;
@@ -2248,7 +2244,7 @@ body.woocommerce-cart .woocommerce p.cart-empty {
   margin-bottom: 5px;
 }
 .wc__login__register .wc__login__register--form #magic-login-shortcode form input[type=text] {
-  font-family: "Quicksand", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 16px;
   padding: 20px;
   border: none;
@@ -2668,7 +2664,7 @@ body.woocommerce-account .woocommerce-address-fields__field-wrapper p.form-row i
   border: none;
   padding: 16px;
   width: 100%;
-  font-family: "Quicksand", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 16px;
   color: #000;
   background: var(--fl1-lightgrey);
@@ -2730,7 +2726,7 @@ body.woocommerce-account .woocommerce-address-fields__field-wrapper fieldset p.f
 }
 body.woocommerce-account button,
 body.woocommerce-account input[type=submit] {
-  font-family: "Quicksand", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 15px;
   font-weight: 800;
   padding: 16px 25px 12px;
@@ -2810,7 +2806,7 @@ body.woocommerce-account table.shop_table tbody tr td span.status-label.failed {
   color: tomato;
 }
 body.woocommerce-account table.shop_table tbody tr td .button {
-  font-family: "Quicksand", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 12px;
   font-weight: 800;
   padding: 8px 25px;
@@ -2847,7 +2843,7 @@ body.woocommerce-account table.order_details, body.woocommerce-account table.sub
   margin-bottom: 20px;
 }
 body.woocommerce-account table.account-payment-methods-table + a {
-  font-family: "Quicksand", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 16px;
   font-weight: 800;
   padding: 10px 23px;
@@ -3357,7 +3353,7 @@ body.woocommerce-account #add_payment_method ul.woocommerce-PaymentMethods li.pa
   background: #203e5f !important;
   font-weight: 700;
   color: #fff;
-  font-family: "Quicksand", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 16px;
   border-radius: 0;
 }
@@ -4990,7 +4986,7 @@ body.woocommerce-lost-password form.woocommerce-ResetPassword p input[type=text]
   border: none;
   padding: 15px 10px;
   width: auto;
-  font-family: "Quicksand", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 16px;
   font-weight: 400;
   color: #1a1a1a;
@@ -4998,7 +4994,7 @@ body.woocommerce-lost-password form.woocommerce-ResetPassword p input[type=text]
   width: 100%;
 }
 body.woocommerce-lost-password form.woocommerce-ResetPassword p input[type=submit] {
-  font-family: "Quicksand", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 14px;
   font-weight: 800;
   padding: 10px 23px;

@@ -50,7 +50,7 @@
                 <div class="footer-menu footer-menu--company">
 
                     <!-- <figure>
-                        <img src="<?php echo esc_url(get_stylesheet_directory_uri().'/img/brownbills-logo.png'); ?>" alt="<?php bloginfo('name'); ?>"/>
+                        <img src="<?php echo esc_url(get_stylesheet_directory_uri().'/img/logo.png'); ?>" alt="<?php bloginfo('name'); ?>"/>
                     </figure> -->
 
                     <div class="footer-menu__heading">

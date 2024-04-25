@@ -345,6 +345,22 @@
       "oAP" : "\/fonts\/mont\/Mont-SemiBold.woff2",
       "oF" : 0
     },
+    "\/fonts\/mont\/Montserrat.woff" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/fonts\/mont\/Montserrat.woff",
+      "oF" : 0
+    },
+    "\/fonts\/mont\/Montserrat.woff2" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/fonts\/mont\/Montserrat.woff2",
+      "oF" : 0
+    },
     "\/footer.php" : {
       "cB" : 0,
       "ft" : 8192,
